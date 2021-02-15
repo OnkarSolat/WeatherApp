@@ -1,5 +1,6 @@
 {
   "name": "weatherapp",
+  "homepage": "https://onkarsolat.github.io/WeatherApp/",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -7,6 +8,7 @@
   "dependencies": {
     "@mapbox/react-code-snippet": "0.1.23",
     "bootstrap": "4.6.0",
+    "gh-pages": "^3.1.0",
     "react": "17.0.1",
     "react-bootstrap": "1.4.3",
     "react-dom": "17.0.1",
@@ -17,6 +19,8 @@
     "typescript": "4.1.3"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages-d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
